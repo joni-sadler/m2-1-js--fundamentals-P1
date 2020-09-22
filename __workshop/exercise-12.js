@@ -17,6 +17,18 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  for (x = 1; x <= 200; x++) {
+    let prime = true;
+    for (num = 2; num < x; num++) {
+      if ((x % num === 0) && (x !== num)) {
+        prime = false;
+      }
+    } if ((prime === true) && (x > 1)) {
+      console.log(x);
+    }
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

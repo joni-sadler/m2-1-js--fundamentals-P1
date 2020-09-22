@@ -20,6 +20,18 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let f = [];
+
+  f[0] = 0;
+  f[1] = 1;
+  for (i = 2; i <= 49; i++) {
+    f[i] = f[i - 2] + f[i - 1];
+    if (i === 49) {
+      console.log(f[i]);
+    }
+  }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

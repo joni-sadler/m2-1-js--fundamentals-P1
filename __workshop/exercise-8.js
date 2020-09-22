@@ -8,7 +8,16 @@ function exercise8() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
 
-  console.log(`The sum is ${sum}`);
+  let sum = 0;
+
+  for (n = 0; n <= 5000; n++) {
+    if (n % 4 === 0) {
+      sum += n;
+    }
+  }
+
+  console.log(`The sum is ${sum}`)
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
